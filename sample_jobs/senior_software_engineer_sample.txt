@@ -1,0 +1,35 @@
+Senior Software Engineer
+
+Role Overview:
+
+This role focuses on designing, building, and maintaining scalable software systems. The position involves working on services that analyze code quality and security, with an emphasis on performance, reliability, and maintainability.
+
+Responsibilities:
+
+- Design, develop, test, and deploy scalable software systems
+- Build and maintain high-quality, maintainable code
+- Develop and integrate APIs for communication between system components
+- Participate in code reviews and mentor other engineers
+- Collaborate with cross-functional teams to design technical solutions
+- Create and maintain testing strategies to ensure system reliability and performance
+- Troubleshoot, debug, and optimize system behavior
+- Contribute to system architecture decisions and technical planning
+- Implement and maintain CI/CD pipelines for continuous integration and delivery
+- Monitor system health and respond to production issues
+
+Requirements:
+
+- Strong experience in software engineering and delivering production systems
+- Proficiency in one or more programming languages (e.g., Python, JavaScript, C++, Java, or similar)
+- Experience designing and building scalable systems or services
+- Understanding of APIs, system integration, and distributed systems concepts
+- Experience with debugging, performance optimization, and system reliability
+- Familiarity with testing methodologies and code quality practices
+- Strong collaboration and communication skills
+
+Nice to Have:
+
+- Experience with cloud-based systems and microservices architecture
+- Experience with CI/CD tools and automation pipelines
+- Experience working with relational databases or distributed systems
+- Interest in code quality, security, or static analysis tools

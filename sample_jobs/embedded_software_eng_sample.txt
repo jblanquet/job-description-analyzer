@@ -1,0 +1,32 @@
+Embedded Software Engineer
+
+Role Overview:
+
+This role focuses on developing embedded software and control systems for hardware-based applications such as battery systems, power electronics, and motor control.
+
+Responsibilities:
+
+- Develop embedded software and control logic for system-level functions
+- Design modular and scalable code for reuse across applications
+- Participate in integration and system-level testing
+- Create and maintain requirements documentation and test plans
+- Perform automated testing and verification of software features
+- Troubleshoot, debug, and perform root cause analysis on system issues
+- Collaborate with cross-functional teams to meet project milestones
+- Analyze and improve system performance and reliability
+- Develop test cases and validate software at multiple system levels
+
+Requirements:
+
+- Bachelor’s degree in Computer Science, Computer Engineering, Electrical Engineering, or related field
+- Experience with embedded software development
+- Proficiency in C or C++
+- Experience reading, debugging, and analyzing source code
+- Understanding of system-level controls or hardware interaction
+
+Nice to Have:
+
+- Experience with Python or MATLAB
+- Familiarity with test automation and regression testing
+- Knowledge of software development processes (Agile, testing methodologies)
+- Experience working with communication protocols or hardware interfaces

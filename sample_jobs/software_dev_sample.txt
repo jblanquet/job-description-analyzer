@@ -1,0 +1,32 @@
+Software Developer
+
+Role Overview:
+
+As a software developer, you will be responsible for designing, developing, testing, deploying, and maintaining software systems. The role focuses on building features that improve user experience and system reliability.
+
+Responsibilities:
+
+- Participate in the full software development lifecycle (analysis, design, development, testing, deployment)
+- Follow coding standards and technical design guidelines
+- Write clear and maintainable code with proper documentation
+- Design and implement system components and integrate them into a complete application
+- Perform unit and integration testing to ensure code quality
+- Troubleshoot, debug, and update existing systems
+- Collaborate with developers, analysts, and designers
+- Contribute to improving system stability and usability
+
+Requirements:
+
+- Bachelor’s degree in Computer Science or equivalent experience
+- Experience with object-oriented programming concepts
+- Proficiency in at least one programming language (e.g., Java, C++, or similar)
+- Experience working with SQL or NoSQL databases
+- Familiarity with web application development frameworks
+- Understanding of data structures and algorithms
+- Strong problem-solving and communication skills
+
+Nice to Have:
+
+- Experience with cloud platforms (AWS, Azure, or similar)
+- Experience contributing to open-source projects
+- Experience building interactive applications
