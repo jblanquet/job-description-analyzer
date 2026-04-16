@@ -22,8 +22,14 @@ Job descriptions are often long and inconsistent. This tool helps quickly identi
 
 ### Run
 
+Analyze all files in the `sample_jobs` folder:
 ```bash
 python analyzer.py
+```
+
+Analyze a specific file:
+```bash
+python analyzer.py path/to/job.txt
 ```
 
 ## Customization

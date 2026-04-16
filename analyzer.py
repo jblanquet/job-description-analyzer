@@ -1,5 +1,5 @@
+import argparse
 from pathlib import Path
-
 from skills import JOB_SKILLS, USER_SKILLS
 
 
@@ -117,20 +117,27 @@ def analyze_file(file_path: Path) -> None:
 
 
 def main() -> None:
-    sample_folder = Path("sample_jobs")
+    parser = argparse.ArgumentParser(description="Analyze a job description against your skills.")
+    parser.add_argument("file", nargs="?", help="Path to a job description .txt file (optional)")
+    args = parser.parse_args()
 
-    if not sample_folder.exists():
-        print("Error: 'sample_jobs' folder not found.")
-        return
+    if args.file:
+        analyze_file(Path(args.file))
+    else:
+        sample_folder = Path("sample_jobs")
 
-    text_files = sorted(sample_folder.glob("*.txt"))
+        if not sample_folder.exists():
+            print("Error: 'sample_jobs' folder not found.")
+            return
 
-    if not text_files:
-        print("Error: No .txt files found in 'sample_jobs'.")
-        return
+        text_files = sorted(sample_folder.glob("*.txt"))
 
-    for file_path in text_files:
-        analyze_file(file_path)
+        if not text_files:
+            print("Error: No .txt files found in 'sample_jobs'.")
+            return
+
+        for file_path in text_files:
+            analyze_file(file_path)
 
 
 if __name__ == "__main__":
