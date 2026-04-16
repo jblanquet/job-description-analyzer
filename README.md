@@ -11,31 +11,8 @@ Job descriptions are often long and inconsistent. This tool helps quickly identi
 - Parses job description text from a file
 - Identifies matching skills based on keyword detection
 - Highlights missing skills
-- Calculates a basic match score
+- Calculates a match score based on relevant skills found in the job description
 - Provides a simple match summary (Strong / Moderate / Weak)
-
-## Example Output
-
-```
-Matched Skills:
-- Python
-- C++
-- Debugging
-- Root Cause Analysis
-- Test Automation
-
-Missing Skills:
-- JavaScript
-- SQL
-- HTML
-- CSS
-- Git
-- System Validation
-- Object-Oriented Programming
-
-Match Score: 41.7%
-Summary: Moderate match
-```
 
 ## How to Run
 
@@ -47,4 +24,85 @@ Summary: Moderate match
 
 ```bash
 python analyzer.py
+```
+
+## Customization
+
+### Add user skills
+
+Edit `USER_SKILLS` in `skills.py` to reflect your own skill set
+
+### Add relevant skills
+
+Edit `JOB_SKILLS` in `skills.py` to add relevant keywords
+
+## Example Output
+
+> Output reflects partial skill set
+
+```
+=== Analyzing: embedded_software_eng_sample.txt ===
+
+Relevant Job Skills:
+- Python
+- C++
+- Debugging
+- Root Cause Analysis
+- Test Automation
+
+Matched Skills:
+- Debugging
+- Root Cause Analysis
+- Test Automation
+
+Missing Skills:
+- Python
+- C++
+
+Match Score: 60.0%
+Summary: Moderate match
+
+----------------------------------------
+
+=== Analyzing: senior_software_engineer_sample.txt ===
+
+Relevant Job Skills:
+- Python
+- C++
+- JavaScript
+- Debugging
+
+Matched Skills:
+- Debugging
+
+Missing Skills:
+- Python
+- C++
+- JavaScript
+
+Match Score: 25.0%
+Summary: Weak match
+
+----------------------------------------
+
+=== Analyzing: software_dev_sample.txt ===
+
+Relevant Job Skills:
+- C++
+- SQL
+- Debugging
+- Object-Oriented Programming
+
+Matched Skills:
+- Debugging
+- Object-Oriented Programming
+
+Missing Skills:
+- C++
+- SQL
+
+Match Score: 50.0%
+Summary: Moderate match
+
+----------------------------------------
 ```

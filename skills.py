@@ -1,4 +1,21 @@
-SKILLS = [
+# Edit this set to reflect your own skills
+USER_SKILLS = {
+    "Python",
+    "C++",
+    "JavaScript",
+    "SQL",
+    "HTML",
+    "CSS",
+    "Git",
+    "Debugging",
+    "Root Cause Analysis",
+    "Test Automation",
+    "System Validation",
+    "Object-Oriented Programming",
+}
+
+# Edit to add new relevant skills
+JOB_SKILLS = [
     {
         "name": "Python",
         "keywords": ["python"]
