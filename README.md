@@ -23,24 +23,36 @@ Job descriptions are often long and inconsistent. This tool helps quickly identi
 ### Run
 
 Analyze all files in the `sample_jobs` folder:
+
 ```bash
 python analyzer.py
 ```
 
 Analyze a specific file:
+
 ```bash
 python analyzer.py path/to/job.txt
 ```
 
+## Setup
+
+Copy the example skills file and update it with your own skills:
+
+```bash
+cp user_skills.example.py user_skills.py
+```
+
+`user_skills.py` is gitignored and will never be committed.
+
 ## Customization
 
-### Add user skills
+### Add or update your skills
 
-Edit `USER_SKILLS` in `skills.py` to reflect your own skill set
+Edit `USER_SKILLS` in `user_skills.py` to reflect your own skill set.
 
-### Add relevant skills
+### Expand the skill catalog
 
-Edit `JOB_SKILLS` in `skills.py` to add relevant keywords
+Edit `JOB_SKILLS` in `job_skills.py` to add new skills or keyword synonyms.
 
 ## Example Output
 

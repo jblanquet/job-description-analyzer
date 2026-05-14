@@ -12,3 +12,12 @@ __pycache__/
 
 # vscode setting folder
 .vscode/
+
+# archive folder
+.archive/
+
+# personal skills file — copy user_skills.example.py to get started
+user_skills.py
+
+# kept to prevent accidental commits from older clones
+skills.py

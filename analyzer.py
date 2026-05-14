@@ -1,6 +1,8 @@
 import argparse
+import re
 from pathlib import Path
-from skills import JOB_SKILLS, USER_SKILLS
+from job_skills import JOB_SKILLS
+from user_skills import USER_SKILLS
 
 
 def load_job_description(file_path: Path) -> str:
@@ -21,7 +23,7 @@ def find_relevant_job_skills(job_text: str, job_skills: list[dict]) -> list[str]
         skill_name = skill["name"]
         keywords = skill["keywords"]
 
-        if any(keyword in job_text for keyword in keywords):
+        if any(re.search(r'(?<!\w)' + re.escape(keyword) + r'(?!\w)', job_text) for keyword in keywords):
             relevant_skills.append(skill_name)
 
     return relevant_skills
