@@ -36,8 +36,6 @@ analyze.bat path/to/job.txt
 analyze.bat path/to/directory
 ```
 
-> Note: Use forward slashes in file paths (e.g. `.archive/job.txt`), as the scripts run inside a Linux container.
-
 For usage help: `.\analyze.ps1 -Help` or `analyze.bat /?`
 
 ### Option 2: Python directly
