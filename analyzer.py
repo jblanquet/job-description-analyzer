@@ -120,26 +120,22 @@ def analyze_file(file_path: Path) -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Analyze a job description against your skills.")
-    parser.add_argument("file", nargs="?", help="Path to a job description .txt file (optional)")
+    parser.add_argument("path", nargs="?", help="Path to a .txt file or a directory of .txt files (defaults to sample_jobs/)")
     args = parser.parse_args()
 
-    if args.file:
-        analyze_file(Path(args.file))
-    else:
-        sample_folder = Path("sample_jobs")
+    target = Path(args.path) if args.path else Path("sample_jobs")
 
-        if not sample_folder.exists():
-            print("Error: 'sample_jobs' folder not found.")
-            return
-
-        text_files = sorted(sample_folder.glob("*.txt"))
-
+    if target.is_file():
+        analyze_file(target)
+    elif target.is_dir():
+        text_files = sorted(target.glob("*.txt"))
         if not text_files:
-            print("Error: No .txt files found in 'sample_jobs'.")
+            print(f"Error: No .txt files found in '{target}'.")
             return
-
         for file_path in text_files:
             analyze_file(file_path)
+    else:
+        print(f"Error: '{target}' is not a valid file or directory.")
 
 
 if __name__ == "__main__":

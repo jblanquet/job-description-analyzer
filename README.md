@@ -16,23 +16,43 @@ Job descriptions are often long and inconsistent. This tool helps quickly identi
 
 ## How to Run
 
-### Requirements
+### Option 1: Wrapper Scripts (Docker, no Python required)
+
+Requires Docker Desktop to be running. No VS Code or devcontainer needed.
+
+**PowerShell:**
+
+```powershell
+.\analyze.ps1                          # analyze all .txt files in sample_jobs/
+.\analyze.ps1 path/to/job.txt         # analyze a specific file
+.\analyze.ps1 path/to/directory       # analyze all .txt files in a directory
+```
+
+**Command Prompt:**
+
+```cmd
+analyze.bat
+analyze.bat path/to/job.txt
+analyze.bat path/to/directory
+```
+
+> Note: Use forward slashes in file paths (e.g. `.archive/job.txt`), as the scripts run inside a Linux container.
+
+### Option 2: Python directly
+
+#### Requirements
 
 - Python 3.11+
 
-### Run
-
-Analyze all files in the `sample_jobs` folder:
+#### Run
 
 ```bash
-python analyzer.py
+python analyzer.py                        # analyze all .txt files in sample_jobs/
+python analyzer.py path/to/job.txt       # analyze a specific file
+python analyzer.py path/to/directory     # analyze all .txt files in a directory
 ```
 
-Analyze a specific file:
-
-```bash
-python analyzer.py path/to/job.txt
-```
+The `sample_jobs/` folder contains example job descriptions and is used as the default when no path is provided.
 
 ## Setup
 
