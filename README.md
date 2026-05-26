@@ -38,6 +38,8 @@ analyze.bat path/to/directory
 
 > Note: Use forward slashes in file paths (e.g. `.archive/job.txt`), as the scripts run inside a Linux container.
 
+For usage help: `.\analyze.ps1 -Help` or `analyze.bat /?`
+
 ### Option 2: Python directly
 
 #### Requirements
@@ -53,6 +55,8 @@ python analyzer.py path/to/directory     # analyze all .txt files in a directory
 ```
 
 The `sample_jobs/` folder contains example job descriptions and is used as the default when no path is provided.
+
+For usage help: `python analyzer.py -h`
 
 ## Setup
 
@@ -73,6 +77,14 @@ Edit `USER_SKILLS` in `user_skills.py` to reflect your own skill set.
 ### Expand the skill catalog
 
 Edit `JOB_SKILLS` in `job_skills.py` to add new skills or keyword synonyms.
+
+## Testing
+
+Requires the devcontainer or Python 3.11+ with pytest installed.
+
+```bash
+pytest tests/ -v
+```
 
 ## Example Output
 
