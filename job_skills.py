@@ -154,6 +154,10 @@ JOB_SKILLS = [
         "keywords": ["multi-agent", "multiagent", "agentic", "agent workflow"]
     },
     {
+        "name": "Network Security",
+        "keywords": ["network security", "firewalls", "intrusion detection", "packet analysis", "network monitoring", "network hardening"]
+    },
+    {
         "name": "Node.js",
         "keywords": ["node.js", "nodejs", "node js"]
     },
